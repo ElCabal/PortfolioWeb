@@ -9,9 +9,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" bg-gray-800 text-neutral-200 h-20 flex justify-between items-center px-10 md:px-18 relative  ">
-      <NavLink to="/" className="text-5xl text-emerald-500 font-nunito">
-        LC.
+    <nav className=" bg-gray-800 text-neutral-200 h-24 flex justify-between items-center px-10 md:px-18 fixed w-full font-nunito ">
+      <NavLink
+        to="/"
+        className="text-3xl text-neutral-200 font-normal font-poppins"
+      >
+        Luis Cabal<span className="text-emerald-500">.</span>
       </NavLink>
       <div className="hidden md:flex gap-10 lg:gap-20 text-1xl font-semibold">
         <NavLink
@@ -20,7 +23,7 @@ const Navbar = () => {
             isActive ? "text-emerald-500" : "inactive"
           }
         >
-          INICIO
+          Inicio
         </NavLink>
         <NavLink
           to="about"
@@ -28,7 +31,7 @@ const Navbar = () => {
             isActive ? "text-emerald-500" : "inactive"
           }
         >
-          SOBRE MÍ
+          Sobre Mí
         </NavLink>
         <NavLink
           to="works"
@@ -36,7 +39,7 @@ const Navbar = () => {
             isActive ? "text-emerald-500" : "inactive"
           }
         >
-          PROYECTOS
+          Proyectos
         </NavLink>
         <NavLink
           to="contact"
@@ -44,7 +47,7 @@ const Navbar = () => {
             isActive ? "text-emerald-500" : "inactive"
           }
         >
-          CONTACTO
+          Contacto
         </NavLink>
       </div>
       <div className="hidden md:flex text-xl gap-5 ">
