@@ -4,10 +4,9 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
+    <div className="bg-gray-800 h-screen ">
       <Navbar />
       <Outlet />
-      <Footer />
     </div>
   );
 }

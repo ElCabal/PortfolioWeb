@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nunito: ["Nunito", "sans-serif"],
+        quicksand: ["Quicksand", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
     },
