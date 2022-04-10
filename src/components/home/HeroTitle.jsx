@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const HeroTitle = () => {
   return (
-    <div className="flex flex-col gap-10 text-center text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-neutral-200 font-quicksand font-bold">
+    <div className="flex flex-col gap-10 text-center text-3xl sm:text-5xl lg:text-6xl xl:text-7xl text-neutral-200 font-quicksand font-bold">
       <p className="leading-relaxed">
         Soy <span className="text-emerald-500">Luis Felipe Cabal</span>
         <br />

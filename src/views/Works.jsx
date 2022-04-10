@@ -1,7 +1,8 @@
 import React from "react";
+import CardWork from "../components/works/CardWork";
 
 const Works = () => {
-  return <div>Works</div>;
+  return <section></section>;
 };
 
 export default Works;
