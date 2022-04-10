@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className=" bg-gradient-to-r from-gray-800 to-gray-900 text-neutral-200 h-24 flex justify-between items-center px-10 md:px-18 relative w-full font-poppins z-50 ">
+      <nav className=" bg-gradient-to-r from-gray-800 to-gray-900 text-neutral-200 h-24 flex justify-between items-center px-10 md:px-18 fixed w-full font-poppins z-50 ">
         <NavLink
           to="/"
           className="text-3xl text-neutral-200 font-bold font-poppins"
@@ -62,8 +62,8 @@ const Navbar = () => {
       <div
         className={
           !isOpen
-            ? "flex flex-col absolute bg-gray-900 w-full  h-screen text-neutral-200 bottom-full left-0 justify-center items-center gap-16 font-semibold text-xl md:hidden  transition-all ease-in duration-500 "
-            : "flex flex-col absolute bg-gray-900 w-full h-screen text-neutral-200 transition-all bottom-full translate-y-full ease-in duration-500 z-10 left-0 justify-center items-center gap-16 font-semibold text-xl md:hidden"
+            ? "flex flex-col absolute bg-gradient-to-r from-gray-800 to-gray-900 w-full  h-screen text-neutral-200 bottom-full left-0 justify-center items-center gap-16 font-semibold text-xl lg:hidden  transition-all ease-in duration-700 "
+            : "flex flex-col absolute bg-gradient-to-r from-gray-800 to-gray-900 w-full h-screen text-neutral-200 transition-all bottom-full translate-y-full ease-in duration-700 z-10 left-0 justify-center items-center gap-16 font-semibold text-xl lg:hidden"
         }
       >
         <NavLink
