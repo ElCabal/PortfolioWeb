@@ -1,9 +1,13 @@
 import React from "react";
 import Image from "../assets/images/aboutme.jpg";
+import { FaReact } from "react-icons/fa";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { IoLogoJavascript, IoLogoCss3, IoLogoNodejs } from "react-icons/io";
+import { SiTailwindcss } from "react-icons/si";
 
 const About = () => {
   return (
-    <section className=" flex flex-col py-20 justify-center items-center px-20 md:px-0 lg:px-20 text-sm   text-neutral-200 font-quicksand">
+    <section className=" flex flex-col py-20 justify-center items-center px-20 md:px-0 lg:px-20 text-sm  text-neutral-200 font-quicksand">
       <div className="grid lg:flex justify-between items-center md:flex-row-reverse gap-20">
         <div className="grid justify-center ">
           <img
@@ -33,22 +37,13 @@ const About = () => {
           </div>
           <div className="flex flex-col gap-4">
             <h2 className="font-bold text-xl">HABILIDADES</h2>
-            <div className="flex gap-4 ">
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-              <ul>
-                <li>ReactJs</li>
-                <li>NodeJs</li>
-                <li>MongoDB</li>
-              </ul>
-              <ul>
-                <li>GIT</li>
-                <li>Figma</li>
-                <li></li>
-              </ul>
+            <div className="flex gap-2 text-5xl ">
+              <AiOutlineHtml5 className=" hover:scale-125 hover:text-[#E44D26]" />
+              <IoLogoCss3 className=" hover:scale-125 hover:text-[#264de4]" />
+              <IoLogoJavascript className=" hover:scale-125 hover:text-[#F0DB4F]" />
+              <FaReact className=" hover:scale-125 hover:text-[#61DBFB]" />
+              <SiTailwindcss className=" hover:scale-125 hover:text-[#38BDF8]" />
+              <IoLogoNodejs className=" hover:scale-125 hover:text-[#679E63]" />
             </div>
           </div>
           <div className="grid gap-4 sm:flex sm:gap-5 justify-center">

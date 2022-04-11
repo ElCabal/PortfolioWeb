@@ -52,8 +52,15 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className="hidden lg:flex text-xl gap-5 ">
-          <FaLinkedin className=" cursor-pointer hover:text-emerald-500" />
-          <GoMarkGithub className=" cursor-pointer hover:text-emerald-500" />
+          <a
+            href="https://www.linkedin.com/in/luis-felipe-cabal/"
+            target={"_blank"}
+          >
+            <FaLinkedin className="cursor-pointer hover:text-emerald-500" />
+          </a>
+          <a href="https://github.com/ElCabal" target={"_blank"}>
+            <GoMarkGithub className="cursor-pointer hover:text-emerald-500" />
+          </a>
         </div>
         <div className="text-4xl lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           {!isOpen ? <CgMenuCheese /> : <CgClose />}
