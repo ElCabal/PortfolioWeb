@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="bg-gray-900 py-10 px-5 w-full rounded-lg flex flex-col gap-4 ">
+    <form className="bg-gray-900 py-10 px-5 w-full rounded-lg flex flex-col gap-4  ">
       <div>
         <label htmlFor="name" className="block uppercase font-bold">
           Nombre
@@ -44,7 +44,7 @@ const ContactForm = () => {
           ENVIAR
         </button>
       </div>
-    </div>
+    </form>
   );
 };
 
