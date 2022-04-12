@@ -8,11 +8,11 @@
   }
 
   .btn-primary {
-    @apply bg-gradient-to-r from-emerald-400 to-emerald-500;
+    @apply bg-gradient-to-r from-emerald-400 to-emerald-500 hover:bg-emerald-900;
   }
 
   .btn-secondary {
-    @apply text-neutral-200  border-double border-4 border-emerald-500;
+    @apply text-neutral-200 border-2 border-emerald-500;
   }
 
   .btn-danger {

@@ -11,7 +11,7 @@ const ContactForm = () => {
           id="name"
           type="text"
           placeholder="Escribe tu nombre"
-          className=" placeholder-gray-400 w-full p-2 border-2 mt-2"
+          className=" text-gray-800 placeholder-gray-400 w-full p-2 border-2 mt-2"
         />
       </div>
       <div>
@@ -22,7 +22,7 @@ const ContactForm = () => {
           id="email"
           type="text"
           placeholder="Escribe tu correo"
-          className=" placeholder-gray-400 w-full p-2 border-2 mt-2"
+          className=" text-gray-800 placeholder-gray-400 w-full p-2 border-2 mt-2"
         />
       </div>
       <div>
@@ -32,8 +32,8 @@ const ContactForm = () => {
         <textarea
           id="message"
           type="textarea"
-          className=" placeholder-gray-400 w-full p-2 border-2 mt-2"
-          placeholder="Describe los síntomas"
+          className=" text-gray-800 placeholder-gray-400 w-full p-2 border-2 mt-2"
+          placeholder="Déjame un mensaje te contactaré los más pronto posible"
         />
       </div>
       <div className="flex justify-center">

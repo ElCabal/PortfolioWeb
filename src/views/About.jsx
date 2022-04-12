@@ -4,10 +4,11 @@ import { FaReact } from "react-icons/fa";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { IoLogoJavascript, IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import { SiTailwindcss } from "react-icons/si";
-
+import { MdFileDownload } from "react-icons/md";
+import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <section className=" flex flex-col py-24 justify-center items-center px-20 md:px-0 lg:px-20 text-sm  text-neutral-200">
+    <section className=" flex flex-col py-24 justify-center items-center px-10 md:px-0 lg:px-20 text-sm  text-neutral-200">
       <div className="grid lg:flex justify-between items-center md:flex-row-reverse gap-20">
         <div className="grid justify-center ">
           <img
@@ -19,7 +20,7 @@ const About = () => {
         <div className="flex flex-col gap-10 ">
           <div className="grid gap-4">
             <h2 className=" pl-2 font-bold text-2xl border-l-4  border-l-emerald-500">
-              SOBRE <span className="text-emerald-500">MÍ</span>{" "}
+              SOBRE <span className="text-emerald-500">MÍ</span>
             </h2>
             <p className=" font-light text-lg leading-6">
               Mi nombre es Luis Felipe Cabal, tengo 25 años y me considero una
@@ -51,8 +52,19 @@ const About = () => {
             </div>
           </div>
           <div className="grid gap-4 sm:flex sm:gap-5 justify-center">
-            <button className="btn btn-primary">Ver Proyectos</button>
-            <button className="btn btn-secondary"> Descargar CV</button>
+            <Link to="/works" className="btn btn-primary">
+              VER PROYECTOS
+            </Link>
+            <button className="btn btn-secondary flex justify-center items-center gap-1 text-emerald-500  ">
+              <MdFileDownload />
+              <a
+                href=""
+                download={"CV Luis Felipe Cabal"}
+                className="text-neutral-200"
+              >
+                DESCARGAR CV
+              </a>
+            </button>
           </div>
         </div>
       </div>

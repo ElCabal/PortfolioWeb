@@ -4,7 +4,7 @@ import CardWork from "../components/works/CardWork";
 
 const Works = () => {
   return (
-    <section className=" flex flex-col gap-10 py-16">
+    <section className=" flex flex-col gap-10 py-16 font-poppins">
       <h2 className="text-center text-2xl text-neutral-200 font-bold">
         MIS PROYECTOS <span className="text-emerald-500">.</span>
       </h2>

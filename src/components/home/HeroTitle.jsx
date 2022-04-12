@@ -1,5 +1,5 @@
 import React from "react";
-import { MdFileDownload } from "react-icons/md";
+
 import { Link, NavLink } from "react-router-dom";
 
 const HeroTitle = () => {
@@ -15,20 +15,12 @@ const HeroTitle = () => {
         Bienvenido a mi <span className="text-emerald-500">Portfolio</span> Web
       </p>
       <div className="grid gap-2 sm:flex sm:gap-5 justify-center">
-        <Link to="works" className="btn btn-primary">
-          PROYECTOS
+        <Link
+          to="about"
+          className="btn btn-primary flex justify-center items-center"
+        >
+          CONÓCEME
         </Link>
-
-        <button className="btn btn-secondary flex justify-center items-center gap-1 text-emerald-500  ">
-          <MdFileDownload />
-          <a
-            href=""
-            download={"CV Luis Felipe Cabal"}
-            className="text-neutral-200"
-          >
-            DESCARGAR CV
-          </a>
-        </button>
       </div>
     </div>
   );
