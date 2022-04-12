@@ -11,7 +11,7 @@ const HeroTitle = () => {
         Fullstack Developer
       </p>
 
-      <p className="text-2xl sm:text-3xl lg:text-4xl ">
+      <p className="text-xl sm:text-3xl lg:text-4xl ">
         Bienvenido a mi <span className="text-emerald-500">Portfolio</span> Web
       </p>
       <div className="grid gap-2 sm:flex sm:gap-5 justify-center">

@@ -1,13 +1,36 @@
-import React from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_fmdasyc",
+        "template_ic3kv9d",
+        e.target,
+        "aNBo7SmQN__uVsUqE"
+      )
+      .then(
+        (result) => {
+          alert("Mensaje enviado con exito! 👍");
+        },
+        (error) => {
+          alert(error.message);
+        }
+      );
+    e.target.reset();
+  }
   return (
-    <form className="bg-gray-900 py-10 px-5 w-full rounded-lg flex flex-col gap-4  ">
+    <form
+      onSubmit={sendEmail}
+      className="bg-gray-900 py-10 px-5 w-full rounded-lg flex flex-col gap-4  "
+    >
       <div>
         <label htmlFor="name" className="block uppercase font-bold">
           Nombre
         </label>
         <input
+          name="name"
           id="name"
           type="text"
           placeholder="Escribe tu nombre"
@@ -19,6 +42,7 @@ const ContactForm = () => {
           Correo
         </label>
         <input
+          name="email"
           id="email"
           type="text"
           placeholder="Escribe tu correo"
@@ -30,6 +54,7 @@ const ContactForm = () => {
           DÉJAME UN MENSAJE
         </label>
         <textarea
+          name="message"
           id="message"
           type="textarea"
           className=" text-gray-800 placeholder-gray-400 w-full p-2 border-2 mt-2"
@@ -37,12 +62,11 @@ const ContactForm = () => {
         />
       </div>
       <div className="flex justify-center">
-        <button
+        <input
           type="submit"
-          className=" w-full sm:max-w-md py-2 rounded btn-primary"
-        >
-          ENVIAR
-        </button>
+          value="ENVIAR"
+          className=" w-full sm:max-w-md py-2 rounded btn btn-primary"
+        />
       </div>
     </form>
   );
