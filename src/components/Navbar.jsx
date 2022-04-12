@@ -48,7 +48,7 @@ const Navbar = () => {
               isActive ? "border-b-2 border-emerald-500" : "inactive"
             }
           >
-            CONTACTO
+            CONTÁCTO
           </NavLink>
         </div>
         <div className="hidden lg:flex text-xl gap-5 ">

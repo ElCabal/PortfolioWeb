@@ -3,7 +3,7 @@ import HeroTitle from "../components/home/HeroTitle";
 
 const Home = () => {
   return (
-    <section className="flex flex-col bg-gray-800 font-poppins pt-28 lg:py-22 px-5">
+    <section className="flex flex-col justify-center items-center bg-gray-800 font-poppins pt-40 lg:pt-20">
       <HeroTitle />
     </section>
   );
