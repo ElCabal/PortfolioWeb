@@ -14,7 +14,7 @@ const HeroTitle = () => {
       <p className="text-xl sm:text-3xl lg:text-4xl ">
         Bienvenido a mi <span className="text-emerald-500">Portfolio</span> Web
       </p>
-      <div>
+      <div className="grid gap-2 sm:flex sm:gap-5 justify-center">
         <Link
           to="about"
           className="btn btn-primary flex justify-center items-center"
