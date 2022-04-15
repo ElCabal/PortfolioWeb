@@ -34,7 +34,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(sendEmail)}
-      className="bg-gray-900 py-5 px-5 w-full rounded-lg flex flex-col gap-4  "
+      className="bg-gray-900 py-5 px-5 w-full rounded flex flex-col gap-4  "
     >
       <div>
         <label htmlFor="name" className="block uppercase font-bold">
@@ -75,7 +75,7 @@ const ContactForm = () => {
           name="email"
           id="email"
           type="text"
-          placeholder="correo@gmail.com"
+          placeholder="Correo@gmail.com"
           className=" text-gray-800 placeholder-gray-400 w-full p-2 border-2 mt-2"
         />
         {errors.email && (
@@ -107,7 +107,7 @@ const ContactForm = () => {
         <input
           type="submit"
           value="ENVIAR"
-          className=" w-full  py-2 rounded btn btn-primary"
+          className=" w-full  py-2 btn btn-primary"
         />
       </div>
 

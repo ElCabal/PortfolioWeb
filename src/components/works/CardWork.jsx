@@ -3,9 +3,9 @@ import Image from "../../assets/images/proyecto-crudo.png";
 
 const CardWork = () => {
   return (
-    <div className="bg-gray-900 rounded-lg shadow-lg text-neutral-200 max-w-xs  hover:scale-105 font-quicksand f flex flex-col ">
+    <div className="bg-gray-900 rounded shadow-lg text-neutral-200 max-w-xs  hover:scale-105 font-quicksand f flex flex-col ">
       <div className=" ">
-        <img src={Image} alt="hola" className=" rounded-lg" />
+        <img src={Image} alt="hola" className=" rounded" />
       </div>
       <div className="p-4 flex flex-col justify-between gap-4	">
         <div className="flex flex-col">

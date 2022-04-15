@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply flex justify-center items-center w-full py-2 px-12 cursor-pointer font-quicksand font-bold text-sm sm:text-sm rounded active:scale-95 text-center;
+    @apply flex justify-center items-center w-full py-2 px-12 cursor-pointer font-quicksand font-bold text-sm sm:text-sm  active:scale-95 text-center;
   }
 
   .btn-primary {

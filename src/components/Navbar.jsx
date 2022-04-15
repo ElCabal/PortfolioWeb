@@ -69,8 +69,8 @@ const Navbar = () => {
       <div
         className={
           !isOpen
-            ? "flex flex-col absolute bg-gradient-to-r from-gray-800 to-gray-900 w-full  h-screen text-neutral-200 bottom-full left-0 justify-center items-center gap-16 font-semibold text-xl lg:hidden  transition-all ease-in duration-700 "
-            : "flex flex-col absolute bg-gradient-to-r from-gray-800 to-gray-900 w-full h-screen text-neutral-200 transition-all bottom-full translate-y-full ease-in duration-700 z-10 left-0 justify-center items-center gap-16 font-semibold text-xl lg:hidden"
+            ? "flex flex-col absolute bg-gradient-to-r from-gray-800 to-gray-900 w-full  h-screen text-neutral-200 bottom-full left-0 justify-center items-center gap-16 font-semibold text-xl lg:hidden  transition-all ease-in duration-500 "
+            : "flex flex-col absolute bg-gradient-to-r from-gray-800 to-gray-900 w-full h-screen text-neutral-200 transition-all bottom-full translate-y-full ease-in duration-400 z-10 left-0 justify-center items-center gap-16 font-semibold text-xl lg:hidden"
         }
       >
         <NavLink
@@ -83,7 +83,7 @@ const Navbar = () => {
           INICIO
         </NavLink>
         <NavLink
-          to="about "
+          to="about"
           className={({ isActive }) =>
             isActive ? "text-emerald-500" : "inactive"
           }

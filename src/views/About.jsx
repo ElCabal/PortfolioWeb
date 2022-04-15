@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../assets/images/aboutme.jpg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaBootstrap } from "react-icons/fa";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { IoLogoJavascript, IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import { SiTailwindcss } from "react-icons/si";
@@ -8,7 +8,7 @@ import { MdFileDownload } from "react-icons/md";
 import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <section className=" flex flex-col py-24 justify-center items-center px-10 md:px-0 lg:px-20 text-sm  text-neutral-200">
+    <section className=" flex flex-col py-24 justify-center items-center px-5 md:px-0 lg:px-20 text-sm  text-neutral-200">
       <div className="grid lg:flex justify-between items-center md:flex-row-reverse gap-20">
         <div className="grid justify-center ">
           <img
@@ -42,13 +42,35 @@ const About = () => {
             <h2 className="pl-2 font-bold text-2xl border-l-4  border-l-emerald-500">
               HABILIDADES
             </h2>
-            <div className="flex gap-2 text-5xl ">
-              <AiOutlineHtml5 className=" hover:scale-125 hover:text-[#E44D26]" />
-              <IoLogoCss3 className=" hover:scale-125 hover:text-[#264de4]" />
-              <IoLogoJavascript className=" hover:scale-125 hover:text-[#F0DB4F]" />
-              <FaReact className=" hover:scale-125 hover:text-[#61DBFB]" />
-              <SiTailwindcss className=" hover:scale-125 hover:text-[#38BDF8]" />
-              <IoLogoNodejs className=" hover:scale-125 hover:text-[#679E63]" />
+            <div className="flex flex-wrap   gap-2 md:gap-4 text-5xl ">
+              <div className=" hover:scale-125 hover:text-[#E44D26]">
+                <AiOutlineHtml5 />
+                <p className="text-xs text-center">HTML</p>
+              </div>
+              <div className=" hover:scale-125 hover:text-[#264de4]">
+                <IoLogoCss3 />
+                <p className="text-xs text-center">CSS</p>
+              </div>
+              <div className=" hover:scale-125 hover:text-[#F0DB4F]">
+                <IoLogoJavascript />
+                <p className="text-xs text-center">JAVASCRIPT</p>
+              </div>
+              <div className=" hover:scale-125 hover:text-[#61DBFB]">
+                <FaReact />
+                <p className="text-xs text-center">REACT</p>
+              </div>
+              <div className=" hover:scale-125 hover:text-[#679E63]">
+                <IoLogoNodejs />
+                <p className="text-xs text-center">NODEJS</p>
+              </div>
+              <div className=" hover:scale-125 hover:text-[#38BDF8]">
+                <SiTailwindcss />
+                <p className="text-xs text-center">TAILWIND</p>
+              </div>
+              <div className=" hover:scale-125 text-center hover:text-[#7611F6]">
+                <FaBootstrap />
+                <p className="text-xs text-center">BOOTSTRAP</p>
+              </div>
             </div>
           </div>
           <div className="grid gap-4 sm:flex sm:gap-5 justify-center">
