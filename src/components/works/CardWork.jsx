@@ -1,19 +1,22 @@
 import React from "react";
-import Image from "../../assets/images/proyecto-crudo.png";
 
-const CardWork = () => {
+const CardWork = ({ id, title, image, deploy, repo }) => {
   return (
     <div className="bg-gray-900 rounded shadow-lg text-neutral-200 max-w-xs  hover:scale-105 font-quicksand f flex flex-col ">
       <div className=" ">
-        <img src={Image} alt="hola" className=" rounded" />
+        <img src={image} alt="work" className=" rounded" />
       </div>
       <div className="p-4 flex flex-col justify-between gap-4	">
         <div className="flex flex-col">
-          <p className="font-semibold text-center">CRUDO APP</p>
+          <p className="font-semibold text-center">{title}</p>
         </div>
         <div className=" flex gap-4 w-full justify-center">
-          <button className="btn btn-primary">Ver</button>
-          <button className="btn btn-secondary">Github</button>
+          <a href={deploy} target="_blank" className="btn btn-primary">
+            Ver
+          </a>
+          <a href={repo} target="_blank" className="btn btn-secondary">
+            Github
+          </a>
         </div>
       </div>
     </div>

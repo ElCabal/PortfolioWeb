@@ -1,6 +1,5 @@
-import React from "react";
-
 import CardWork from "../components/works/CardWork";
+import Projects from "../assets/data/proyectos";
 
 const Works = () => {
   return (
@@ -8,11 +7,18 @@ const Works = () => {
       <h2 className="text-center text-2xl text-neutral-200 font-bold">
         MIS PROYECTOS <span className="text-emerald-500">.</span>
       </h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 place-items-center xl:pt-8">
-        <CardWork />
-        <CardWork />
-        <CardWork />
-        <CardWork />
+      <div className=" flex flex-wrap justify-center items-center gap-4 xl:pt-8">
+        {Projects.map((item) => {
+          return (
+            <CardWork
+              id={item.id}
+              title={item.title}
+              image={item.image}
+              deploy={item.deploy}
+              repo={item.repo}
+            />
+          );
+        })}
       </div>
     </section>
   );
