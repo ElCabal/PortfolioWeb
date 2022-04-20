@@ -11,7 +11,7 @@ const Works = () => {
         {Projects.map((item) => {
           return (
             <CardWork
-              id={item.id}
+              key={item.id}
               title={item.title}
               image={item.image}
               deploy={item.deploy}

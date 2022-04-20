@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../public/images/aboutme.jpg";
+import Image from "../../public/assets/images/aboutme.jpg";
 import { FaReact, FaBootstrap } from "react-icons/fa";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { IoLogoJavascript, IoLogoCss3, IoLogoNodejs } from "react-icons/io";
