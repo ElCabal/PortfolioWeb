@@ -80,7 +80,7 @@ const About = () => {
             <button className="btn btn-secondary flex justify-center items-center gap-1 text-emerald-500  ">
               <MdFileDownload />
               <a
-                href=""
+                href="/cv/CV_Felipe_Cabal.pdf"
                 download={"CV Luis Felipe Cabal"}
                 className="text-neutral-200"
               >
