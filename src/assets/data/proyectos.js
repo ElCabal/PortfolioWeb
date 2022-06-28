@@ -15,6 +15,14 @@ const projects = [
   },
   {
     id: 2,
+    title: "COVIMAP",
+    image: "/assets/images/covimap presentación.jpg",
+    deploy:
+      "https://jymmymurillo.github.io/Impacto-Covid-19-en-el-mundo/index.html",
+    repo: "https://github.com/JymmyMurillo/Impacto-Covid-19-en-el-mundo",
+  },
+  {
+    id: 3,
     title: "ENCRIPTADOR",
     image: "/assets/images/encriptador.jpg",
     deploy: "https://text-encryptor.vercel.app/",
