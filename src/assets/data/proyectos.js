@@ -13,6 +13,13 @@ const projects = [
     deploy: "https://todolistappfront.netlify.app/?",
     repo: "https://github.com/ElCabal/frontend_todo_app",
   },
+  {
+    id: 2,
+    title: "ENCRIPTADOR",
+    image: "/assets/images/encriptador.jpg",
+    deploy: "https://text-encryptor.vercel.app/",
+    repo: "https://github.com/ElCabal/Challenge_Alura_Encrypter",
+  },
 ];
 
 export default projects;
