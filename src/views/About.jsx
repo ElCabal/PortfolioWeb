@@ -23,19 +23,19 @@ const About = () => {
               SOBRE <span className="text-emerald-500">MÍ</span>
             </h2>
             <p className=" font-light text-lg leading-6">
-              Mi nombre es Luis Felipe Cabal, tengo 25 años y me considero una
+              Soy un programador web fullstack, apasionado por los retos y la
               <br />
-              persona muy determinada y autodidacta. Estoy formandome
+              tecnología, estudiante en formación como tecnólogo en análisis y
               <br />
-              actualmente en un bootcamp de programación como desarrollador
+              desarrollo de software, busco superarme cada vez más y subir de
               <br />
-              fullstack, me ha fascinado el mundo de la tecnología y me
+              nivel constantemente, he participado en bootcamps de programación
               <br />
-              emocionan los retos que puedo encontrar en ella, mi objetivo es
+              y desarrollado aplicaciones web tanto del lado del cliente como
               <br />
-              mejorar mis skills continuamente para ser un buen solucionador
+              del servidor junto con metodologías de trabajo Scrum y control de
               <br />
-              problemas.
+              versionamiento Git.
             </p>
           </div>
           <div className="flex flex-col gap-4">
