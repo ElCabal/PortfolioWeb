@@ -43,31 +43,31 @@ const About = () => {
               HABILIDADES
             </h2>
             <div className="flex flex-wrap   gap-2 md:gap-4 text-5xl ">
-              <div className=" hover:scale-125 hover:text-[#E44D26]">
+              <div className=" hover:scale-125  hover:duration-700 hover:text-[#E44D26]">
                 <AiOutlineHtml5 />
                 <p className="text-xs text-center">HTML</p>
               </div>
-              <div className=" hover:scale-125 hover:text-[#264de4]">
+              <div className=" hover:scale-125  hover:duration-700 hover:text-[#264de4]">
                 <IoLogoCss3 />
                 <p className="text-xs text-center">CSS</p>
               </div>
-              <div className=" hover:scale-125 hover:text-[#F0DB4F]">
+              <div className=" hover:scale-125  hover:duration-700 hover:text-[#F0DB4F]">
                 <IoLogoJavascript />
                 <p className="text-xs text-center">JAVASCRIPT</p>
               </div>
-              <div className=" hover:scale-125 hover:text-[#61DBFB]">
+              <div className=" hover:scale-125  hover:duration-700 hover:text-[#61DBFB]">
                 <FaReact />
                 <p className="text-xs text-center">REACT</p>
               </div>
-              <div className=" hover:scale-125 hover:text-[#679E63]">
+              <div className=" hover:scale-125  hover:duration-700 hover:text-[#679E63]">
                 <IoLogoNodejs />
                 <p className="text-xs text-center">NODEJS</p>
               </div>
-              <div className=" hover:scale-125 hover:text-[#38BDF8]">
+              <div className=" hover:scale-125  hover:duration-700 hover:text-[#38BDF8]">
                 <SiTailwindcss />
                 <p className="text-xs text-center">TAILWIND</p>
               </div>
-              <div className=" hover:scale-125 text-center hover:text-[#7611F6]">
+              <div className=" hover:scale-125  hover:duration-700 text-center hover:text-[#7611F6]">
                 <FaBootstrap />
                 <p className="text-xs text-center">BOOTSTRAP</p>
               </div>

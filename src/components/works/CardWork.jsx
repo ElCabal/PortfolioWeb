@@ -2,7 +2,7 @@ import React from "react";
 
 const CardWork = ({ id, title, image, deploy, repo }) => {
   return (
-    <div className="bg-gray-900 rounded shadow-lg text-neutral-200 max-w-xs  hover:scale-105 font-quicksand f flex flex-col ">
+    <div className="bg-gray-900 rounded shadow-lg text-neutral-200 max-w-xs  hover:scale-105 hover:duration-700 font-quicksand f flex flex-col ">
       <div className=" ">
         <img src={image} alt="work" className=" rounded" />
       </div>
