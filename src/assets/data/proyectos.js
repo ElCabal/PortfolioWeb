@@ -28,6 +28,13 @@ const projects = [
     deploy: "https://text-encryptor.vercel.app/",
     repo: "https://github.com/ElCabal/Challenge_Alura_Encrypter",
   },
+  {
+    id: 4,
+    title: "ADVICE GENERATOR",
+    image: "/assets/images/advice_generator.jpg",
+    deploy: "https://advicesgeneratorr.netlify.app/",
+    repo: "https://github.com/ElCabal/advices_generator_challenge",
+  },
 ];
 
 export default projects;
