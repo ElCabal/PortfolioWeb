@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { GoMarkGithub } from "react-icons/go";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import css from "./Navbar.module.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,36 +19,16 @@ const Navbar = () => {
           Luis Cabal<span className="text-emerald-500">.</span>
         </NavLink>
         <div className="hidden lg:flex gap-10 lg:gap-20 text-1xl font-semibold">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "border-b-2 border-emerald-500" : "inactive"
-            }
-          >
+          <NavLink to="/" className={css.navLink}>
             INICIO
           </NavLink>
-          <NavLink
-            to="about"
-            className={({ isActive }) =>
-              isActive ? "border-b-2 border-emerald-500" : "inactive"
-            }
-          >
+          <NavLink to="about" className={css.navLink}>
             SOBRE MÍ
           </NavLink>
-          <NavLink
-            to="works"
-            className={({ isActive }) =>
-              isActive ? "border-b-2 border-emerald-500" : "inactive"
-            }
-          >
+          <NavLink to="works" className={css.navLink}>
             PROYECTOS
           </NavLink>
-          <NavLink
-            to="contact"
-            className={({ isActive }) =>
-              isActive ? "border-b-2 border-emerald-500" : "inactive"
-            }
-          >
+          <NavLink to="contact" className={css.navLink}>
             CONTÁCTO
           </NavLink>
         </div>
