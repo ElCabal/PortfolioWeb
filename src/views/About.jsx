@@ -6,9 +6,15 @@ import { IoLogoJavascript, IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import { SiTailwindcss } from "react-icons/si";
 import { MdFileDownload } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 const About = () => {
   return (
-    <section className=" flex flex-col py-24 justify-center items-center px-5 md:px-0 lg:px-20 text-sm  text-neutral-200">
+    <motion.section
+      className=" flex flex-col py-24 justify-center items-center px-5 md:px-0 lg:px-20 text-sm  text-neutral-200"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="grid lg:flex justify-between items-center md:flex-row-reverse gap-20">
         <div className="grid justify-center ">
           <img
@@ -90,7 +96,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

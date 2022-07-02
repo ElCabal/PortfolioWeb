@@ -1,9 +1,14 @@
 import CardWork from "../components/works/CardWork";
 import Projects from "../assets/data/proyectos";
-
+import { motion } from "framer-motion";
 const Works = () => {
   return (
-    <section className=" flex flex-col gap-10 py-16 font-poppins">
+    <motion.section
+      className=" flex flex-col gap-10 py-16 font-poppins"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h2 className="text-center text-2xl text-neutral-200 font-bold">
         MIS PROYECTOS <span className="text-emerald-500">.</span>
       </h2>
@@ -20,7 +25,7 @@ const Works = () => {
           );
         })}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

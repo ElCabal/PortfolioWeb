@@ -1,11 +1,13 @@
-import { Outlet } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { AnimatedRoutes } from "./components/AnimatedRoutes";
 import Navbar from "./components/navbar/Navbar";
-
 function App() {
   return (
     <div className="flex flex-col justify-center items-center font-poppins">
-      <Navbar />
-      <Outlet />
+      <Router>
+        <Navbar />
+        <AnimatedRoutes />
+      </Router>
     </div>
   );
 }
