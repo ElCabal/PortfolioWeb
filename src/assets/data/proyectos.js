@@ -35,6 +35,13 @@ const projects = [
     deploy: "https://advicesgeneratorr.netlify.app/",
     repo: "https://github.com/ElCabal/advices_generator_challenge",
   },
+  {
+    id: 5,
+    title: "GITHUB USER SEARCH",
+    image: "/assets/images/githubo_user_search.jpg",
+    deploy: "https://github-user-app-azure.vercel.app/",
+    repo: "https://github.com/ElCabal/github_userApp",
+  },
 ];
 
 export default projects;
